@@ -1,5 +1,24 @@
-<div><h2><%= "#{@forecast[1]} degrees" %></h2></div>
+<div class="table-responsive">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <td><h1><%= "Pretty Fuckin #{@forecast[0]} Out" %></h1></td>
+      </tr>
+      <tr>
+        <th>Chance of Precipitation</th>
+        <td><%= "#{@forecast[2]}% "%></td>
+      </tr>
+      <tr>
+        <th>Temperature</th>
+        <td><%= "#{@forecast[1]} degrees" %></td>
+      </tr>
+    </thead>
+  </table>
+</div>
 
-<div><h2><%= "#{@forecast[0]} Oustide" %></h2></div>
-
-<div><h2><%= "#{@forecast[2]}% Chance of Precipitation" %></h2></div>
+<style>
+html {
+  background: url("assets/cloudy.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+</style>
