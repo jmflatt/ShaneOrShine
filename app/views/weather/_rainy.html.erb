@@ -1,0 +1,24 @@
+<div class="table-responsive">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <td><h1><%= "#{@forecast[0]}. Well, My day is ruined" %></h1></td>
+      </tr>
+      <tr>
+        <th>Chance of Precipitation</th>
+        <td><%= "#{@forecast[2]}% "%></td>
+      </tr>
+      <tr>
+        <th>Temperature</th>
+        <td><%= "#{@forecast[1]} degrees" %></td>
+      </tr>
+    </thead>
+  </table>
+</div>
+
+<style>
+html {
+  background: url("assets/rainy.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+</style>
