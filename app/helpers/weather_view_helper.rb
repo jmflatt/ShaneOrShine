@@ -14,7 +14,7 @@ module WeatherViewHelper
     case forecast
     when 'Overcast'
       return 'cloudy'
-    when /cloud/
+    when /Cloud/
       return 'cloudy'
     when 'Clear'
       return 'sunny'
